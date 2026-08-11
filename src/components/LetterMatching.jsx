@@ -21,7 +21,8 @@ const names = [
 
           >
             <span className="mr-2 font-bold text-blue-400">
-              {index + 1}.
+              {index + 1} {name.split("").reverse().join("")}
+              
             </span>
 
             {name}
