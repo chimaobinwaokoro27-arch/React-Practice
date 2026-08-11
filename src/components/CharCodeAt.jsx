@@ -10,14 +10,20 @@ function CharCodeAt() {
       </h1>
 
       <div className="grid grid-cols-4 gap-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-13">
-        {alphabet.map((letter) => (
-          <div
-            key={letter}
-
-          >
-            {letter}
-          </div>
-        ))}
+        {alphabet.map((letter, index) => (
+  <div
+    key={letter}
+    className={
+      index < 5
+        ? "text-green-500"
+        : index < 10
+          ? "text-blue-400"
+          : "text-red-500"
+    }
+  >
+    {letter}
+  </div>
+))}
       </div>
     </div>
   );
