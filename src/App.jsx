@@ -1,13 +1,15 @@
-import LetterMatching from "./components/LetterMatching.jsx";
-import CharCodeAt from "./components/CharCodeAt.jsx";
-import Vowels from "./components/vowels.jsx";
+import LetterMatching from "./components/letters/LetterMatching.jsx";
+import CharCodeAt from "./components/charcodeat/CharCodeAt.jsx";
+import Vowels from "./components/vowel/vowels.jsx";
+import Name from "./components/Name/Name.jsx";
 
 function App() {
   return (
     <div>
       <LetterMatching />
       <CharCodeAt />
-      <Vowels/>
+      <Vowels />
+      <Name />
     </div>
   );
 }
